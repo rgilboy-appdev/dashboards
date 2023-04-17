@@ -1,0 +1,16 @@
+<h1> Convert <%= @ticker %> </h1>
+
+<p> Go <a href="/forex">back</a>. </p>
+
+<ul>
+
+<% @currency_symbols.each do |second_ticker|%>
+
+<% @print_second_ticker = second_ticker.at(0)%>
+
+<li> <a href="/forex/<%=@ticker%>/<%=@print_second_ticker%>"> Convert 1 <%=@ticker%> to <%= second_ticker.at(0)%> </a> </li>
+
+  <% end %>
+
+
+</ul>

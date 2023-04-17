@@ -1,0 +1,13 @@
+<h1> Currency Pairs </h1>
+
+<p> Go <a>back</a>. </p>
+
+<ul>
+
+<% @currency_symbols.each do |ticker| %>
+<li>
+<a href="/forex/<%=ticker.at(0)%>"> Convert 1 <%= ticker.at(0) %> to... </a>
+</li>
+<% end %>
+
+</ul>
